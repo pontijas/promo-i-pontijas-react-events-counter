@@ -10,15 +10,25 @@ class App extends React.Component {
   }
 
   upCount = () => {
-    console.log('me han clickado');
+    this.setState(function (prevState) {
+      return {
+        count: prevState.count + 1,
+      };
+    });
   };
 
   downCount = () => {
-    console.log('me han clickado');
+    this.setState(function (prevState) {
+      if (prevState.count >= 1) {
+        return {
+          count: prevState.count - 1,
+        };
+      }
+    });
   };
 
   resetCount = () => {
-    console.log('me han clickado');
+    this.setState({ count: 0 });
   };
 
   render() {
