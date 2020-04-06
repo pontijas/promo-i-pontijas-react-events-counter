@@ -5,11 +5,22 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: 'Cristina',
+      count: 0,
     };
   }
+
   render() {
-    return <h1>Hola {this.state.name}</h1>;
+    return (
+      <div className="counter-container">
+        <h1>Counter</h1>
+        <h2>{this.state.count}</h2>
+        <section className="btn-section">
+          <button className="btn-up">Up</button>
+          <button className="btn-down">Down</button>
+          <button className="btn-reset">Reset</button>
+        </section>
+      </div>
+    );
   }
 }
 
