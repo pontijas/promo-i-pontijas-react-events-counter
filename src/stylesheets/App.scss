@@ -1,0 +1,17 @@
+.app-container {
+  height: 100vh;
+}
+
+.counter-container {
+  position: absolute;
+  top: 150px;
+  left: 200px;
+  width: 30vw;
+  padding: 20px 0 30px 0;
+  border: 5px solid black;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
