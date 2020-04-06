@@ -16,9 +16,15 @@ class App extends React.Component {
           <h1>Counter</h1>
           <h2>{this.state.count}</h2>
           <section className="btn-section">
-            <button className="btn-up">Up</button>
-            <button className="btn-down">Down</button>
-            <button className="btn-reset">Reset</button>
+            <button onClick={this.upCount} className="btn-up">
+              Up
+            </button>
+            <button onClick={this.downCount} className="btn-down">
+              Down
+            </button>
+            <button onClick={this.resetCount} className="btn-reset">
+              Reset
+            </button>
           </section>
         </section>
       </div>
