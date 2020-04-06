@@ -9,6 +9,18 @@ class App extends React.Component {
     };
   }
 
+  upCount = () => {
+    console.log('me han clickado');
+  };
+
+  downCount = () => {
+    console.log('me han clickado');
+  };
+
+  resetCount = () => {
+    console.log('me han clickado');
+  };
+
   render() {
     return (
       <div className="app-container">
